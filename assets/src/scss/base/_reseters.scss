@@ -1,0 +1,45 @@
+/*
+	RESETERS
+		Bunch of classes to quickly reset elements to the most basic state.
+*/
+
+/*
+  <button> reset
+*/
+.button--reset {
+  
+  // Remove default browser appearance for buttons.
+  appearance: none;
+  background: none;
+  
+  // Remove margins.
+  padding: 0;
+  margin: 0;
+  
+  // Remove borders for IE.
+  border-width: 0;
+  
+  // Normalize font and color  not inherited by `button`.
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  
+  // Address `overflow` in IE
+  overflow: visible;
+  
+  //  Normalize cursor style
+  cursor: pointer;
+  
+  // Normalize line-height
+  line-height: normal;
+  
+  // Normalize text-align
+  text-align: inherit;
+
+  // Remove inner padding and border in Firefox 4+.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  
+}

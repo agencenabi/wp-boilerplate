@@ -3,9 +3,10 @@ A simple, but efficient, way to start a WordPress project.
 
 ## Getting Started
 To start using this boilerplate, you must build it with Gulp. Do to so, just install the required modules:
-```cd /path/to/your/theme```
-```npm install```
-```gulp watch```
+
+Locate your theme: ```cd /path/to/your/theme```<br />
+Install required node_modules: ```npm install```<br />
+Build with Gulp: ```gulp watch```<br />
 
 
 ## Build tool

@@ -60,7 +60,7 @@ class GoogleMap_Shortcode {
 		if ( ! self::$api_key )
 			return;
 		wp_enqueue_script( 'map-js',
-			"https://maps.googleapis.com/maps/api/js?key=" . self::$api_key . "&sensor=true",
+			"https://maps.googleapis.com/maps/api/js?key=" . self::$api_key,
 			"jquery"
 		);
 	}

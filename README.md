@@ -25,9 +25,9 @@ We use <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.
 ## Shortcodes
 
 <b>Email Encoding</b>
-Will return an encoded version of a mailto link.
+Will return an encoded version of a mailto link.<br />
 ```[email]your@email.com[/email]```
 
 <b>Google Maps</b>
-Will display a simple Google Map and include required scripts.
+Will display a simple Google Map and include required scripts.<br />
 ```[map api_key="INSERT YOUR API KEY" id="your-map" coords="53.339381, -6.260405" zoom="15" type="satellite"]```

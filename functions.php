@@ -12,6 +12,7 @@ require_once 'functions/nabi-post-types.php';
 require_once 'functions/nabi-security.php';
 require_once 'functions/nabi-template-functions.php';
 require_once 'functions/nabi-widgets.php';
+require_once 'functions/nabi-map.php';
 
 // WP-Admin Functions
 require_once 'functions/admin/nabi-login.php';

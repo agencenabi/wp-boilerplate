@@ -6,7 +6,7 @@
 function nabi_login_page() { ?>
     <style type="text/css">
         body.login {
-			background: black:
+			background: black;
 		}
 		.login h1 a {
 			background-image: none !important;

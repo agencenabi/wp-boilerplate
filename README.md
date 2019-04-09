@@ -2,7 +2,7 @@
 A simple, but efficient, way to start a WordPress project.
 
 ## Getting Started
-To start using this boilerplate, you must build it with Gulp. Do to so, just install the required modules:
+To start using this boilerplate, you must build it with Gulp. To do so, just install the required modules:
 
 Locate your theme: ```cd /path/to/your/theme```<br />
 Install required node_modules: ```npm install```<br />
@@ -10,7 +10,7 @@ Build and watch Gulp tasks: ```gulp watch```<br />
 
 
 ## Build tool
-This boilerplate is currently using Gulp to compile the SASS and JS files. For more info, lookup ```gulpfile.js``` or <a href="https://gulpjs.com/" target="_blank">Gulp's official doc</a>.
+This boilerplate is currently using Gulp to compile the SASS and JS files. For more info, lookup the ```gulpfile.js``` file or <a href="https://gulpjs.com/" target="_blank">Gulp's official doc</a>.
 
 
 ## Theme Functions

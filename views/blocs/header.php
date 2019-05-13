@@ -6,7 +6,7 @@
 			<div class="_col _col--xl-3 _col--md-6">
 				<a class="pagelink logo__wrap menu__btn--home" href="<?php echo home_url(); ?>">
 					<?php
-						echo file_get_contents(str_replace('/index.php', '', $_SERVER['SCRIPT_FILENAME']) . '/wp-content/themes/nabi-wp-boilerplate/assets/dist/img/logo.svg');
+						echo file_get_contents( get_template_directory_uri() . '/assets/dist/img/logo.svg');
 					?>
 				</a>
 			</div>

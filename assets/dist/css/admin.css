@@ -1,0 +1,57 @@
+/* Highlight menu sections */
+
+#adminmenu li.wp-menu-separator {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+#menu-posts-contactform {
+	border-top: solid 2px #393D42 !important;
+	margin-top: 10px !important;
+}
+
+#menu-comments {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* WP Header */
+
+#wp-admin-bar-wp-logo {
+	display: none;
+}
+
+/* WP Menu */
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+	width: 230px;
+}
+
+#adminmenu .wp-submenu {
+	left: 230px;
+}
+
+/* WP Footer */
+
+#wpcontent,
+#wpfooter {
+	margin-left: 230px;
+}
+
+/* User profile */
+
+.user-description-wrap,
+.user-profile-picture,
+.user-admin-color-wrap,
+.user-rich-editing-wrap,
+.user-comment-shortcuts-wrap,
+.show-admin-bar {
+	display: none;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRtaW4uY3NzIiwic291cmNlcyI6WyJhZG1pbi5zY3NzIl0sIm1hcHBpbmdzIjoiQUFBQSw2QkFBNkI7QUFDN0IsQUFBYSxVQUFILENBQUMsRUFBRSxBQUFBLGtCQUFrQixDQUFDO0VBQy9CLE1BQU0sRUFBRSxHQUFJO0VBQ1osVUFBVSxFQUFFLHdCQUFJO0NBQ2hCOztBQUNELEFBQUEsdUJBQXVCLENBQUM7RUFDdkIsVUFBVSxFQUFFLDRCQUE2QjtFQUN6QyxVQUFVLEVBQUUsZUFBZ0I7Q0FDNUI7O0FBRUQsQUFBQSxjQUFjLENBQUM7RUFDZCxhQUFhLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyx3QkFBSSxDQUFxQixVQUFVO0NBQzVEOztBQUVELGVBQWU7QUFDZixBQUFBLHFCQUFxQixDQUFDO0VBQ3JCLE9BQU8sRUFBRSxJQUFLO0NBQ2Q7O0FBR0QsYUFBYTtBQUNiLEFBQUEsVUFBVTtBQUNWLEFBQVcsVUFBRCxDQUFDLFdBQVc7QUFDdEIsQUFBQSxjQUFjO0FBQ2QsQUFBQSxjQUFjLENBQUM7RUFDZCxLQUFLLEVBQUUsS0FBTTtDQUNiOztBQUNELEFBQVcsVUFBRCxDQUFDLFdBQVcsQ0FBQztFQUN0QixJQUFJLEVBQUUsS0FBTTtDQUNaOztBQUVELGVBQWU7QUFDZixBQUFBLFVBQVU7QUFDVixBQUFBLFNBQVMsQ0FBQztFQUNULFdBQVcsRUFBRSxLQUFNO0NBQ25COztBQUdELGtCQUFrQjtBQUNsQixBQUFBLHNCQUFzQjtBQUN0QixBQUFBLHFCQUFxQjtBQUNyQixBQUFBLHNCQUFzQjtBQUN0QixBQUFBLHVCQUF1QjtBQUN2QixBQUFBLDRCQUE0QjtBQUM1QixBQUFBLGVBQWUsQ0FBQztFQUNmLE9BQU8sRUFBRSxJQUFLO0NBQ2QiLCJuYW1lcyI6W119 */
+
+/*# sourceMappingURL=admin.css.map */
+

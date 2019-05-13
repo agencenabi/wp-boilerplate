@@ -65,15 +65,11 @@ function nabi_assets() {
 	$version = '1';
 
 	// WPML unwanted CSS / JS
-	wp_deregister_style('language-selector');
-	wp_deregister_script('language-selector');
+// 	wp_deregister_style('language-selector');
+// 	wp_deregister_script('language-selector');
 
 	// Woocommerce related CSS / JS
-	wp_deregister_style('jquery-ui');
-	wp_deregister_style('wc-moneris');
-	wp_deregister_style('berocket_aapf_widget-style');
-	wp_deregister_style('berocket_aapf_widget-scroll-style');
-	wp_deregister_script('berocket_aapf_widget-scroll-script');
+// 	wp_deregister_style('jquery-ui');
 
 	// JS
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-latest.min.js', array(), $version, true);

@@ -1,8 +1,5 @@
 <div class="second-nav">
-
-	<!-- Secondary Nav -->
-	<?php wp_nav_menu( array('menu' => 'Menu secondaire' )); ?>
-
+	
 	<!-- Secondary Nav Additionnal content -->
 	<?php if ( is_active_sidebar( 'secondnavwidget' ) ) : ?>
 	    <?php dynamic_sidebar( 'secondnavwidget' ); ?>

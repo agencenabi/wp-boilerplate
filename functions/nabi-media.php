@@ -185,7 +185,7 @@ add_action( 'manage_media_columns', 'nabi_manage_media_columns', 10, 2 );
 					$dropdown_options = array(
 						'taxonomy'        => $taxonomy,
 						'name'            => $taxonomy,
-						'show_option_all' => __( 'View all categories', 'wp-media-library-categories' ),
+						'show_option_all' => __( 'Voir toutes les catégories', 'nabi' ),
 						'hide_empty'      => false,
 						'hierarchical'    => true,
 						'orderby'         => 'name',
@@ -196,7 +196,7 @@ add_action( 'manage_media_columns', 'nabi_manage_media_columns', 10, 2 );
 				} else {
 					$dropdown_options = array(
 						'taxonomy'        => $taxonomy,
-						'show_option_all' => __( 'View all categories', 'wp-media-library-categories' ),
+						'show_option_all' => __( 'Voir toutes les catégories', 'nabi' ),
 						'hide_empty'      => false,
 						'hierarchical'    => true,
 						'orderby'         => 'name',
@@ -222,24 +222,24 @@ add_action( 'manage_media_columns', 'nabi_manage_media_columns', 10, 2 );
 
 				echo '<script type="text/javascript">';
 				echo 'jQuery(window).load(function() {';
-				echo 'jQuery(\'<optgroup id="nabi_media_category_optgroup1" label="' .  html_entity_decode( __( 'Categories', 'wp-media-library-categories' ), ENT_QUOTES, 'UTF-8' ) . '">\').appendTo("select[name=\'action\']");';
-				echo 'jQuery(\'<optgroup id="nabi_media_category_optgroup2" label="' .  html_entity_decode( __( 'Categories', 'wp-media-library-categories' ), ENT_QUOTES, 'UTF-8' ) . '">\').appendTo("select[name=\'action2\']");';
+				echo 'jQuery(\'<optgroup id="nabi_media_category_optgroup1" label="' .  html_entity_decode( __( 'Catégories', 'nabi' ), ENT_QUOTES, 'UTF-8' ) . '">\').appendTo("select[name=\'action\']");';
+				echo 'jQuery(\'<optgroup id="nabi_media_category_optgroup2" label="' .  html_entity_decode( __( 'Catégories', 'nabi' ), ENT_QUOTES, 'UTF-8' ) . '">\').appendTo("select[name=\'action2\']");';
 
 				// add categories
 				foreach ( $terms as $term ) {
-					$sTxtAdd = esc_js( __( 'Add', 'wp-media-library-categories' ) . ': ' . $term->name );
+					$sTxtAdd = esc_js( __( 'Ajouter', 'nabi' ) . ': ' . $term->name );
 					echo "jQuery('<option>').val('nabi_media_category_add_" . $term->term_taxonomy_id . "').text('" . $sTxtAdd . "').appendTo('#nabi_media_category_optgroup1');";
 					echo "jQuery('<option>').val('nabi_media_category_add_" . $term->term_taxonomy_id . "').text('" . $sTxtAdd . "').appendTo('#nabi_media_category_optgroup2');";
 				}
 				// remove categories
 				foreach ( $terms as $term ) {
-					$sTxtRemove = esc_js( __( 'Remove', 'wp-media-library-categories' ) . ': ' . $term->name );
+					$sTxtRemove = esc_js( __( 'Retirer', 'nabi' ) . ': ' . $term->name );
 					echo "jQuery('<option>').val('nabi_media_category_remove_" . $term->term_taxonomy_id . "').text('" . $sTxtRemove . "').appendTo('#nabi_media_category_optgroup1');";
 					echo "jQuery('<option>').val('nabi_media_category_remove_" . $term->term_taxonomy_id . "').text('" . $sTxtRemove . "').appendTo('#nabi_media_category_optgroup2');";
 				}
 				// remove all categories
-				echo "jQuery('<option>').val('nabi_media_category_remove_0').text('" . esc_js(  __( 'Remove all categories', 'wp-media-library-categories' ) ) . "').appendTo('#nabi_media_category_optgroup1');";
-				echo "jQuery('<option>').val('nabi_media_category_remove_0').text('" . esc_js(  __( 'Remove all categories', 'wp-media-library-categories' ) ) . "').appendTo('#nabi_media_category_optgroup2');";
+				echo "jQuery('<option>').val('nabi_media_category_remove_0').text('" . esc_js(  __( 'Retirer toutes les catégories', 'nabi' ) ) . "').appendTo('#nabi_media_category_optgroup1');";
+				echo "jQuery('<option>').val('nabi_media_category_remove_0').text('" . esc_js(  __( 'Retirer toutes les catégories', 'nabi' ) ) . "').appendTo('#nabi_media_category_optgroup2');";
 				echo "});";
 				echo "</script>";
 
@@ -356,7 +356,7 @@ add_action( 'manage_media_columns', 'nabi_manage_media_columns', 10, 2 );
 			global $post_type, $pagenow;
 
 			if ( $pagenow == 'upload.php' && $post_type == 'attachment' && isset( $_GET['editCategory'] ) ) {
-				echo '<div class="updated"><p>' . __( 'Category changes are saved.', 'wp-media-library-categories' ) . '</p></div>';
+				echo '<div class="updated"><p>' . __( 'Les changements à la catégories ont été sauvegardés.', 'nabi' ) . '</p></div>';
 			}
 		}
 		add_action( 'admin_notices', 'nabi_media_category_custom_bulk_admin_notices' );

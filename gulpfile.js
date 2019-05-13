@@ -1,31 +1,28 @@
 var gulp  = require( 'gulp' ),
-	gutil = require( 'gulp-util' ),
 
 	// CSS related
 	sass         = require( 'gulp-sass' ),
 	autoprefixer = require( 'gulp-autoprefixer' ),
 	mmq          = require( 'gulp-merge-media-queries' ),
-	sourcemaps   = require( 'gulp-sourcemaps' ),
-	filter       = require( 'gulp-filter' ),
 	minifycss    = require( 'gulp-uglifycss' ),
 
 	// JS related
 	concat = require( 'gulp-concat' ),
 	uglify = require( 'gulp-uglify' ),
-	svgSprite = require( 'gulp-svg-sprite' ),
 
 	// Others
 	rename  = require( 'gulp-rename' ),
 	notify  = require( 'gulp-notify' ),
 	plumber = require( 'gulp-plumber' );
+	svgSprite = require( 'gulp-svg-sprite' ),
 
 // Default Gulp task
-gulp.task( 'default', ['front-css', 'inline-css', 'functions-js', 'vendor-js', 'svgSprite'], function() {
+gulp.task( 'default', ['front-css', 'inline-css', 'admin-css', 'functions-js', 'vendor-js', 'svg-sprite'], function() {
 
 });
 
 // Watch task
-gulp.task( 'watch', ['front-css', 'inline-css', 'admin-css', 'functions-js', 'vendor-js', 'svgSprite'], function() {
+gulp.task( 'watch', ['front-css', 'inline-css', 'admin-css', 'functions-js', 'vendor-js', 'svg-sprite'], function() {
 	// Styles
 	gulp.watch( ['assets/src/scss/**/*.scss'], ['front-css'] );
 	gulp.watch( ['assets/src/scss/**/*.scss'], ['inline-css'] );
@@ -34,21 +31,10 @@ gulp.task( 'watch', ['front-css', 'inline-css', 'admin-css', 'functions-js', 've
 	// Scripts
 	gulp.watch( ['assets/src/js/modules/*.js'], ['functions-js'] );
 	gulp.watch( ['assets/src/js/vendor/*.js'], ['vendor-js'] );
+	
+	// SVG
+	gulp.watch( ['assets/src/svg/*.svg'], ['svg-sprite'] );
 });
-
-
-// SVG sprite
-gulp.task( 'svgSprite', function() {
-    return  gulp.src( 'assets/src/svg/*.svg' )
-                .pipe( svgSprite({
-                    mode : {
-                        defs : true
-                    }
-                }) )
-                .pipe( rename( 'icons.svg' ) )
-                .pipe( gulp.dest( 'assets/dist/img' ) );
-});
-
 
 // Styles task
 gulp.task( 'front-css', function() {
@@ -173,3 +159,14 @@ gulp.task( 'vendor-js', function() {
 				.pipe( gulp.dest( 'assets/dist/js' ) );
 });
 
+// SVG sprite task
+gulp.task( 'svg-sprite', function() {
+    return  gulp.src( 'assets/src/svg/*.svg' )
+                .pipe( svgSprite({
+                    mode : {
+                        defs : true
+                    }
+                }) )
+                .pipe( rename( 'icons.svg' ) )
+                .pipe( gulp.dest( 'assets/dist/img' ) );
+});

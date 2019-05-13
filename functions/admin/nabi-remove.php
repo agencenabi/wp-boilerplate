@@ -45,7 +45,7 @@ class nabi_Remove {
 
 		// Display “Appearance > Menu” in the top level menu
 		remove_submenu_page( 'themes.php', 'nav-menus.php' );
-		$menu[] = array( __( 'Menus', 'theme-slug' ), 'edit_theme_options', 'nav-menus.php', __( 'Menus', 'theme-slug' ), 'menu-top menu-nav', 'menu-nav', 'dashicons-menu');
+		$menu[] = array( __( 'Menus', 'nabi' ), 'edit_theme_options', 'nav-menus.php', __( 'Menus', 'nabi' ), 'menu-top menu-nav', 'menu-nav', 'dashicons-menu');
 
 		// Remove items (non-admins)
 //			remove_menu_page( 'index.php' ); 				// Dashboard
@@ -64,10 +64,10 @@ class nabi_Remove {
 
 
 			unset( $submenu['index.php'][10] ); 		  	// Update
-			unset( $submenu['themes.php'][5] ); 		  	// Themes
+// 			unset( $submenu['themes.php'][5] ); 		  	// Themes
 			unset( $submenu['themes.php'][6] ); 		  	// Customize
-			unset( $submenu['themes.php'][7] ); 		  	// Widgets
-			unset( $submenu['themes.php'][10] ); 		  	// Menu
+// 			unset( $submenu['themes.php'][7] ); 		  	// Widgets
+// 			unset( $submenu['themes.php'][10] ); 		  	// Menu
 			unset( $submenu['options-general.php'][15] ); 	// Writing
 			unset( $submenu['options-general.php'][25] ); 	// Discussion
 			unset( $submenu['edit.php'][16] ); 			  	// Tags

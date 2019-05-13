@@ -39,6 +39,11 @@
 	top: -5.2em;
 	z-index: 10;
 	transition: all .5s cubic-bezier(0.79,0.14,0.15,0.86);
+	display: none;
+	
+	@media #{$md} {
+		display: block;
+	}
 
 	&:before {
 		background: $black none repeat scroll 0 0;

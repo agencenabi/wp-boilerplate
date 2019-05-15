@@ -1,0 +1,16 @@
+.testimonials {
+	background: #EEE;
+	list-style-type: none;
+	padding: 0;
+}
+
+.testimonial {
+	padding: 1em 2em;
+	border-bottom: solid 2px white;
+	list-style-type: none;
+}
+
+.testimonial quote {
+	display: block;
+	font-style: italic;
+}

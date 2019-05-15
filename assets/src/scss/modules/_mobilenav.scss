@@ -92,6 +92,8 @@
 }
 
 .js-main-nav-wrap {
+	display: flex;
+	align-items: center;
 
 	@media #{$md} {
 		position: fixed;

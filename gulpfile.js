@@ -5,6 +5,8 @@ var gulp  = require( 'gulp' ),
 	autoprefixer = require( 'gulp-autoprefixer' ),
 	mmq          = require( 'gulp-merge-media-queries' ),
 	minifycss    = require( 'gulp-uglifycss' ),
+	sourcemaps	 = require( 'gulp-sourcemaps' ),
+	filter 		 = require( 'gulp-filter' ),
 
 	// JS related
 	concat = require( 'gulp-concat' ),
